@@ -9,45 +9,45 @@ import * as jQuery from "jquery";
 })
 export class IonRangeSliderComponent implements OnChanges{
 
-    @Input() private min: any;
-    @Input() private max: any;
-    @Input() private from: any;
-    @Input() private to: any;
-    @Input() private disable: any;
+    @Input() public min: any;
+    @Input() public max: any;
+    @Input() public from: any;
+    @Input() public to: any;
+    @Input() public disable: any;
 
-    @Input() private type: any;
-    @Input() private step: any;
-    @Input() private min_interval: any;
-    @Input() private max_interval: any;
-    @Input() private drag_interval: any;
-    @Input() private values: any;
-    @Input() private from_fixed: any;
-    @Input() private from_min: any;
-    @Input() private from_max: any;
-    @Input() private from_shadow: any;
-    @Input() private to_fixed: any;
-    @Input() private to_min: any;
-    @Input() private to_max: any;
-    @Input() private to_shadow: any;
-    @Input() private prettify_enabled: any;
-    @Input() private prettify_separator: any;
-    @Input() private force_edges: any;
-    @Input() private keyboard: any;
-    @Input() private keyboard_step: any;
-    @Input() private grid: any;
-    @Input() private grid_margin: any;
-    @Input() private grid_num: any;
-    @Input() private grid_snap: any;
-    @Input() private hide_min_max: any;
-    @Input() private hide_from_to: any;
-    @Input() private prefix: any;
-    @Input() private postfix: any;
-    @Input() private max_postfix: any;
-    @Input() private decorate_both: any;
-    @Input() private values_separator: any;
-    @Input() private input_values_separator: any;
+    @Input() public type: any;
+    @Input() public step: any;
+    @Input() public min_interval: any;
+    @Input() public max_interval: any;
+    @Input() public drag_interval: any;
+    @Input() public values: any;
+    @Input() public from_fixed: any;
+    @Input() public from_min: any;
+    @Input() public from_max: any;
+    @Input() public from_shadow: any;
+    @Input() public to_fixed: any;
+    @Input() public to_min: any;
+    @Input() public to_max: any;
+    @Input() public to_shadow: any;
+    @Input() public prettify_enabled: any;
+    @Input() public prettify_separator: any;
+    @Input() public force_edges: any;
+    @Input() public keyboard: any;
+    @Input() public keyboard_step: any;
+    @Input() public grid: any;
+    @Input() public grid_margin: any;
+    @Input() public grid_num: any;
+    @Input() public grid_snap: any;
+    @Input() public hide_min_max: any;
+    @Input() public hide_from_to: any;
+    @Input() public prefix: any;
+    @Input() public postfix: any;
+    @Input() public max_postfix: any;
+    @Input() public decorate_both: any;
+    @Input() public values_separator: any;
+    @Input() public input_values_separator: any;
 
-    @Input() private prettify: Function;
+    @Input() public prettify: Function;
 
     @Output() onStart: EventEmitter<IonRangeSliderCallback> = new EventEmitter<IonRangeSliderCallback>();
     @Output() onChange: EventEmitter<IonRangeSliderCallback> = new EventEmitter<IonRangeSliderCallback>();
@@ -55,13 +55,13 @@ export class IonRangeSliderComponent implements OnChanges{
     @Output() onUpdate: EventEmitter<IonRangeSliderCallback> = new EventEmitter<IonRangeSliderCallback>();
 
     private el: ElementRef;
-    private inputElem: any;
+	public inputElem: any;
     private initialized = false;
 
-    private from_percent: number;
-    private from_value: number;
-    private to_percent: number;
-    private to_value: number;
+    public from_percent: number;
+    public from_value: number;
+    public to_percent: number;
+    public to_value: number;
 
     constructor(el: ElementRef) {
         this.el = el;
