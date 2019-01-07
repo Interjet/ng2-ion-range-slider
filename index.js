@@ -1,2 +1,2 @@
-exports.IonRangeSliderModule = require('./lib/ion-range-slider.module').IonRangeSliderModule;
-exports.IonRangeSliderComponent = require('./lib/ion-range-slider.component').IonRangeSliderComponent;
+exports.IonRangeSliderModule = require('./src/ion-range-slider.module').IonRangeSliderModule;
+exports.IonRangeSliderComponent = require('./src/ion-range-slider.component').IonRangeSliderComponent;
